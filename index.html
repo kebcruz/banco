@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Banco</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="script.js"></script>
+</head>
+<body class="inicio">
+    <div class="container">
+        <!-- Menú lateral -->
+        <div class="sidebar">
+            <h1 class="title">Banco</h1>
+            <div class="button-container">
+                <!-- Redirige a ticket.html al hacer clic -->
+                <button id="ticket" class="btn" onclick="location.href='ticket.html'">Ticket</button>
+                <button id="caja" class="btn">Caja</button>
+                <button id="monitor" class="btn">Monitor</button>
+            </div>
+        </div>
+
+        <!-- Contenido -->
+        <div class="content">
+            <div id="cajaOpciones" class="caja-opciones" style="display: none;">
+                <h3>Selecciona una caja:</h3>
+                <button class="caja-btn" onclick="location.href='caja1.html'">Caja 1</button>
+                <button class="caja-btn" onclick="location.href='caja2.html'">Caja 2</button>
+                <button class="caja-btn" onclick="location.href='caja3.html'">Caja 3</button>
+                <button class="caja-btn" onclick="location.href='caja4.html'">Caja 4</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("caja").addEventListener("click", function() {
+            document.getElementById("cajaOpciones").style.display = "block";
+        });
+    </script>
+</body>
+</html>

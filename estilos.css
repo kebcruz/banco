@@ -1,0 +1,354 @@
+/* Diseño general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 700px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+/* Menú lateral */
+.sidebar {
+  width: 35%;
+  background: #000;  /* Negro puro */
+  padding: 20px;
+  color: #ffd700;  /* Dorado para el texto */
+  text-align: center;
+}
+
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #c0392b;
+}
+
+/* Contenido derecho */
+.content {
+  width: 65%;
+  padding: 30px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+}
+
+.result-box {
+  margin-top: 15px;
+  padding: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* Estilos para ticket.html */
+.ticket-page {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.ticket-box {
+  width: 50%;
+  max-width: 500px;
+  padding: 20px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-box h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.ticket-result {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.button-ticket {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.ticket-btn{
+  width: 80%;
+  padding: 10px;
+  background: #055405;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+/* Estilos para caja.html */
+.caja-page {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.caja-box {
+  width: 60%; 
+  max-width: 700px;  
+  padding: 20px;  
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;  
+  max-height: 80vh;  
+  overflow-y: auto;  
+}
+
+.caja-box h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.caja-result {
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 5px;
+  font-size: 18px; 
+}
+
+.caja-opciones {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.caja-btn {
+  width: 80%;
+  padding: 10px;
+  background: #4a0550;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+  margin-bottom: 10px;  /* Añade un margen inferior entre los botones */
+}
+
+.caja-btn:hover {
+  background: #073a5c;
+}
+
+/* Estilos para monitor.html */
+.monitor-page {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.monitor-box {
+  width: 60%; 
+  max-width: 700px;  
+  padding: 20px;  
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;  
+  max-height: 80vh;  
+  overflow-y: auto;  
+}
+
+.monitor-box h2 {
+  color: #333;
+  margin-bottom: 15px;  
+}
+
+.monitor-result {
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 5px;
+  font-size: 18px; 
+}
+
+.monitor-table {
+  width: 100%;
+  max-width: 100%;  
+  overflow-x: hidden;  
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.monitor-table th, .monitor-table td {
+  padding: 12px 15px;  
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.monitor-table th {
+  background-color: #0b1e63;
+  color: white;
+}
+
+.monitor-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.monitor-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Estilo adicional */
+.caja-table {
+  width: 100%;
+  max-width: 100%;  
+  overflow-x: hidden;  
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.caja-table th, .caja-table td {
+  padding: 12px 15px;  
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.caja-table th {
+  background-color: #034873;
+  color: white;
+}
+
+.caja-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.caja-table tr:hover {
+  background-color: #ddd;
+}
+
+.atender-btn {
+  width: 100%;
+  padding: 10px;
+  background: #097819;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+  margin-bottom: 10px;
+}
+
+.atender-btn:hover {
+  background: #0034c4;
+}
+
+.atendido-btn {
+  width: 100%;
+  padding: 10px;
+  background: #a20101; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+  margin-bottom: 10px;
+}
+
+.atendido-btn:hover {
+  background: #b15000;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  margin-top: 10px;
+}
+
+
+/* Mensaje de éxito 
+.success-message {
+  color: green;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
+  background: #e6ffe6;
+  border: 1px solid #2d7a31;
+  border-radius: 5px;
+  text-align: center;
+}*/
